@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice-Controlled Text Editor</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice-Controlled Text Editor</h1>
+        <div class="controls">
+            <button id="start-btn">Start Listening</button>
+            <button id="stop-btn">Stop Listening</button>
+        </div>
+        <div class="text-editor">
+            <textarea name="text" id="text" placeholder="Speak your text..."></textarea>
+        </div>
+        <div class="options">
+            <div class="option">
+                <label for="font-style">Font Style:</label>
+                <select name="font-style" id="font-style">
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic</option>
+                    <option value="bold">Bold</option>
+                    <option value="underline">Underline</option>
+                </select>
+            </div>
+            <div class="option">
+                <label for="text-color">Text Color:</label>
+                <input type="color" name="text-color" id="text-color">
+            </div>
+            <div class="option">
+                <label for="paragraph-style">Paragraph Style:</label>
+                <select name="paragraph-style" id="paragraph-style">
+                    <option value="normal">Normal</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right-align</option>
+                </select>
+            </div>
+        </div>
+        <div id="preview"></div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
